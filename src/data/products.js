@@ -4,10 +4,16 @@ export const COMPANY_INFO = {
   phone: "0333 2798969",
   rawPhone: "03332798969",
   whatsappNumber: "923332798969",
-  address: "Main Electronics Market, Commercial Area, Pakistan",
+  address: "Japan Electronics, Main Electronics Market, Saddar / Auto Bhan, Hyderabad, Sindh 71000, Pakistan",
+  city: "Hyderabad, Pakistan",
   email: "info@japanelectronics.pk",
-  workingHours: "Mon - Sat: 10:00 AM - 9:00 PM"
+  workingHours: "Mon - Sat: 10:00 AM - 9:00 PM",
+  googleMapsUrl: "https://www.google.com/maps/place/Japan+Electronics/@25.3585812,68.2931557,13z/data=!4m6!3m5!1s0x394c70ef411e8bc5:0xe5c79667f34bcced!8m2!3d25.3908067!4d68.3683512!16s%2Fg%2F11xh73g6f",
+  googleEmbedUrl: "https://maps.google.com/maps?q=25.3908067,68.3683512&z=16&output=embed",
+  googleRating: 4.8,
+  googleReviewCount: "120+"
 };
+
 
 export const CATEGORIES = [
   {

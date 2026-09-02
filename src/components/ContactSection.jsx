@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Phone, MapPin, Clock, Mail, Send, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Phone, MapPin, Clock, Mail, Send, CheckCircle2, AlertCircle, ExternalLink, Star } from 'lucide-react';
 import { COMPANY_INFO } from '../data/products';
 
 export default function ContactSection() {
@@ -35,7 +35,6 @@ export default function ContactSection() {
 
     setErrors({});
     setSubmitted(true);
-    // Auto reset after submission feedback
     setTimeout(() => {
       setFormData({ name: '', phone: '', category: 'General Inquiry', message: '' });
       setSubmitted(false);
@@ -49,26 +48,56 @@ export default function ContactSection() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-3.5 py-1.5 rounded-full bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-wider mb-3">
-            Get In Touch
+            Get In Touch & Visit Us
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
             Let's Talk Technology.
           </h2>
           <p className="text-base sm:text-lg text-slate-600 font-normal">
-            Have questions about a product or need a price quote? Reach out to Japan Electronics directly.
+            Have questions about a product or want to visit our store? Reach out or get driving directions via Google Maps.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-12 gap-12 items-start">
+        <div className="grid lg:grid-cols-12 gap-12 items-start mb-16">
           
-          {/* Left Column: Business Details Card */}
+          {/* Left Column: Business Contact & Google Rating */}
           <div className="lg:col-span-5 flex flex-col gap-6">
             <div className="bg-slate-50 border border-slate-200/80 rounded-3xl p-8 shadow-sm">
+              
+              {/* Google Verified Store Badge */}
+              <div className="flex items-center justify-between p-4 rounded-2xl bg-white border border-slate-200/60 shadow-sm mb-6">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-blue-600/10 text-blue-600 flex items-center justify-center font-bold">
+                    <Star className="w-5 h-5 fill-amber-400 text-amber-400" />
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-1">
+                      <span className="text-base font-extrabold text-slate-900">{COMPANY_INFO.googleRating}</span>
+                      <div className="flex text-amber-400">
+                        {[...Array(5)].map((_, i) => (
+                          <Star key={i} className="w-3.5 h-3.5 fill-current" />
+                        ))}
+                      </div>
+                    </div>
+                    <span className="text-xs text-slate-500 font-medium">Google Verified Business ({COMPANY_INFO.googleReviewCount} Reviews)</span>
+                  </div>
+                </div>
+                <a
+                  href={COMPANY_INFO.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-xl text-blue-600 hover:bg-blue-50 transition-colors"
+                  title="View on Google Maps"
+                >
+                  <ExternalLink className="w-5 h-5" />
+                </a>
+              </div>
+
               <h3 className="text-xl font-extrabold text-slate-900 mb-6">
                 Direct Business Contact
               </h3>
 
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-5">
                 <a
                   href={`tel:${COMPANY_INFO.rawPhone}`}
                   className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-slate-200/60 shadow-sm hover:border-blue-300 hover:shadow-md transition-all group"
@@ -84,20 +113,25 @@ export default function ContactSection() {
                   </div>
                 </a>
 
-                <div className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-slate-200/60 shadow-sm">
-                  <div className="p-3 rounded-xl bg-blue-50 text-blue-600">
+                <a
+                  href={COMPANY_INFO.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-slate-200/60 shadow-sm hover:border-blue-300 hover:shadow-md transition-all group"
+                >
+                  <div className="p-3 rounded-xl bg-blue-50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-colors shrink-0">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block">Location</span>
-                    <span className="text-sm font-semibold text-slate-800">
+                    <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block">Store Location</span>
+                    <span className="text-xs font-semibold text-slate-800 leading-relaxed block group-hover:text-blue-600 transition-colors">
                       {COMPANY_INFO.address}
                     </span>
                   </div>
-                </div>
+                </a>
 
                 <div className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-slate-200/60 shadow-sm">
-                  <div className="p-3 rounded-xl bg-blue-50 text-blue-600">
+                  <div className="p-3 rounded-xl bg-blue-50 text-blue-600 shrink-0">
                     <Clock className="w-5 h-5" />
                   </div>
                   <div>
@@ -109,13 +143,23 @@ export default function ContactSection() {
                 </div>
               </div>
 
-              <div className="mt-8 pt-6 border-t border-slate-200/60 text-center">
+              <div className="mt-8 pt-6 border-t border-slate-200/60 flex flex-col gap-3">
                 <a
                   href={`tel:${COMPANY_INFO.rawPhone}`}
                   className="w-full inline-flex items-center justify-center gap-2 py-3.5 px-6 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-2xl shadow-lg shadow-blue-600/25 transition-all"
                 >
                   <Phone className="w-4 h-4" />
                   <span>Call Japan Electronics</span>
+                </a>
+
+                <a
+                  href={COMPANY_INFO.googleMapsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full inline-flex items-center justify-center gap-2 py-3 px-6 bg-slate-200/80 hover:bg-slate-300/80 text-slate-800 font-bold rounded-2xl text-xs transition-colors"
+                >
+                  <ExternalLink className="w-4 h-4 text-blue-600" />
+                  <span>Get Directions on Google Maps</span>
                 </a>
               </div>
             </div>
@@ -237,6 +281,22 @@ export default function ContactSection() {
           </div>
 
         </div>
+
+        {/* Embedded Interactive Google Map */}
+        <div className="rounded-3xl overflow-hidden shadow-xl border border-slate-200/80 bg-slate-100 aspect-[16/6] relative">
+          <iframe
+            title="Japan Electronics Store Location Google Maps"
+            src={COMPANY_INFO.googleEmbedUrl}
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full h-full min-h-[300px]"
+          />
+        </div>
+
       </div>
     </section>
   );
