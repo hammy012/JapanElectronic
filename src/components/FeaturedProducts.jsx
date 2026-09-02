@@ -8,12 +8,12 @@ export default function FeaturedProducts() {
   const [selectedProduct, setSelectedProduct] = useState(null);
 
   const tabs = [
-    { id: 'all', label: 'All Products' },
-    { id: 'tvs', label: 'TVs & Displays' },
-    { id: 'audio', label: 'Audio & Speakers' },
-    { id: 'laptops', label: 'Laptops' },
-    { id: 'mobile', label: 'Mobile' },
-    { id: 'smart', label: 'Smart Devices' },
+    { id: 'all', label: 'All Appliances' },
+    { id: 'ac', label: 'Inverter ACs' },
+    { id: 'refrigerator', label: 'Refrigerators & Freezers' },
+    { id: 'led', label: 'LED TVs' },
+    { id: 'washing', label: 'Washing Machines' },
+    { id: 'cooler', label: 'Air Coolers' },
   ];
 
   const filteredProducts = activeTab === 'all'
@@ -27,13 +27,13 @@ export default function FeaturedProducts() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="inline-block px-3.5 py-1.5 rounded-full bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-wider mb-3">
-            Curated Selection
+            Popular Appliances
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mb-4">
-            Technology You'll Love
+            Quality Home Electronics
           </h2>
           <p className="text-base sm:text-lg text-slate-600 font-normal">
-            Explore some of our popular electronics and smart technology carefully picked for quality and endurance.
+            Explore our bestselling Inverter Air Conditioners, Refrigerators, LED TVs, Washing Machines & Air Coolers.
           </p>
         </div>
 
@@ -186,7 +186,7 @@ export default function FeaturedProducts() {
                     </p>
 
                     <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3">
-                      Key Highlights & Specs
+                      Key Appliance Specs
                     </h4>
                     <ul className="space-y-2 mb-8">
                       {selectedProduct.specs.map((spec, i) => (

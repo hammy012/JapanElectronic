@@ -5,10 +5,10 @@ import { COMPANY_INFO } from '../data/products';
 
 export default function ProductShowcase() {
   const features = [
-    "Ultra HD & 4K Smart OLED Displays",
-    "Active Noise-Canceling Wireless Audio",
-    "High-Performance Laptops & Smartwatches",
-    "Energy-Efficient Home Electronics"
+    "Full DC Inverter ACs (T3 Tropical Compressors)",
+    "Glass Door & Double Door Refrigerators",
+    "4K Ultra HD Smart LED TVs with Google OS",
+    "Automatic Washing Machines & Heavy Room Coolers"
   ];
 
   return (
@@ -32,8 +32,8 @@ export default function ProductShowcase() {
             >
               <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-800 aspect-[4/3] group">
                 <img
-                  src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1200&q=80"
-                  alt="Smart Electronics Living Showcase"
+                  src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80"
+                  alt="Japan Electronics Inverter AC Unit"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
@@ -44,8 +44,8 @@ export default function ProductShowcase() {
                       <Sparkles className="w-5 h-5" />
                     </div>
                     <div>
-                      <h4 className="text-sm font-bold">Premium Japanese Engineering</h4>
-                      <p className="text-xs text-slate-300">Selected for quality, longevity and everyday ease.</p>
+                      <h4 className="text-sm font-bold">DC Inverter Technology</h4>
+                      <p className="text-xs text-slate-300">Save up to 75% electricity with low-voltage startup support.</p>
                     </div>
                   </div>
                 </div>
@@ -62,16 +62,16 @@ export default function ProductShowcase() {
             >
               <span className="inline-flex items-center gap-2 self-start px-3.5 py-1.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-400/30 text-xs font-bold uppercase tracking-wider mb-6">
                 <Zap className="w-3.5 h-3.5 fill-current" />
-                Featured Editorial
+                Energy Efficient Living
               </span>
 
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight mb-6 leading-tight">
-                Smart Technology.<br />
+                Smart Appliances.<br />
                 <span className="text-blue-400">Better Living.</span>
               </h2>
 
               <p className="text-slate-300 text-base sm:text-lg font-normal leading-relaxed mb-8">
-                From entertainment to everyday essentials, Japan Electronics brings modern technology closer to you with products selected for quality, performance and everyday convenience.
+                From summer cooling with Inverter ACs to kitchen food preservation and home laundry, Japan Electronics brings authentic appliances built for Pakistani climate and electrical conditions.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3 mb-10">
@@ -88,7 +88,7 @@ export default function ProductShowcase() {
                   href="#products"
                   className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-2xl shadow-lg shadow-blue-600/40 transition-all duration-200 hover:-translate-y-0.5"
                 >
-                  <span>Explore Our Collection</span>
+                  <span>Explore All Appliances</span>
                   <ArrowRight className="w-5 h-5" />
                 </a>
 

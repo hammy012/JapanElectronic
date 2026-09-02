@@ -2,16 +2,15 @@ import React from 'react';
 
 export default function ProductMarquee() {
   const marqueeItems = [
-    "SMART TV",
-    "LAPTOPS",
-    "AUDIO & SPEAKERS",
-    "SMARTPHONES",
-    "SMART DEVICES",
-    "HOME ELECTRONICS",
-    "4K OLED DISPLAY",
-    "NOISE-CANCELING",
-    "HIGH-RES AUDIO",
-    "GENUINE JAPANESE QUALITY"
+    "INVERTER AC (1.0 - 2.0 TON)",
+    "REFRIGERATORS & FREEZERS",
+    "SMART 4K LED TV",
+    "AUTOMATIC WASHING MACHINES",
+    "ROOM AIR COOLERS",
+    "DEEP FREEZERS",
+    "WATER DISPENSERS",
+    "MICROWAVE OVENS",
+    "100% GENUINE OFFICIAL WARRANTY"
   ];
 
   return (

@@ -1,6 +1,6 @@
 export const COMPANY_INFO = {
   name: "Japan Electronics",
-  tagline: "Power Your World With Better Electronics",
+  tagline: "Quality Home Appliances & Electronics",
   phone: "0333 2798969",
   rawPhone: "03332798969",
   whatsappNumber: "923332798969",
@@ -14,141 +14,140 @@ export const COMPANY_INFO = {
   googleReviewCount: "120+"
 };
 
-
 export const CATEGORIES = [
   {
-    id: "tvs",
-    name: "TVs & Displays",
+    id: "ac",
+    name: "Inverter ACs",
+    count: "15+ Models",
+    description: "DC Inverter Air Conditioners with T3 tropical compressors & energy saving.",
+    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1000&q=80",
+    badge: "Top Summer Sale"
+  },
+  {
+    id: "refrigerator",
+    name: "Refrigerators & Freezers",
+    count: "22+ Models",
+    description: "Glass door fridges, double door refrigerators & deep freezers with low voltage start.",
+    image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1000&q=80",
+    badge: "Best Seller"
+  },
+  {
+    id: "led",
+    name: "LED TVs & Smart Displays",
     count: "18+ Models",
-    description: "4K OLED, QLED & Ultra HD Smart TVs with immersive Dolby Vision.",
+    description: "4K Ultra HD Smart LED TVs with Google TV, Frameless screens & Dolby Sound.",
     image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=1000&q=80",
     badge: "Popular"
   },
   {
-    id: "laptops",
-    name: "Laptops & Computers",
-    count: "24+ Models",
-    description: "High-performance laptops for gaming, creative work & office productivity.",
-    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1000&q=80",
-    badge: "Top Rated"
-  },
-  {
-    id: "mobile",
-    name: "Mobile & Accessories",
-    count: "35+ Models",
-    description: "Flagship smartphones, fast chargers, wireless pads & protective gear.",
-    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1000&q=80",
-    badge: "New Arrival"
-  },
-  {
-    id: "audio",
-    name: "Audio & Speakers",
+    id: "washing",
+    name: "Washing Machines",
     count: "20+ Models",
-    description: "Active noise-canceling headphones, Bluetooth soundbars & hi-fi speakers.",
-    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1000&q=80",
-    badge: "Best Seller"
-  },
-  {
-    id: "smart",
-    name: "Smart Devices",
-    count: "15+ Models",
-    description: "Smartwatches, fitness bands, home automation hubs & security systems.",
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1000&q=80",
-    badge: "Trending"
-  },
-  {
-    id: "home",
-    name: "Home Electronics",
-    count: "30+ Models",
-    description: "Inverter ACs, smart refrigerators, micro-waves & kitchen appliances.",
-    image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1000&q=80",
+    description: "Fully automatic front & top load washers, twin tub spinners & dryers.",
+    image: "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=1000&q=80",
     badge: "Essential"
+  },
+  {
+    id: "cooler",
+    name: "Air Coolers",
+    count: "12+ Models",
+    description: "Heavy-duty room air coolers with honeycomb pads & ice box technology.",
+    image: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=1000&q=80",
+    badge: "Energy Saver"
+  },
+  {
+    id: "kitchen",
+    name: "Kitchen & Home Appliances",
+    count: "30+ Models",
+    description: "Microwave ovens, water dispensers, cooking ranges & blenders.",
+    image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1000&q=80",
+    badge: "Trending"
   }
 ];
 
 export const FEATURED_PRODUCTS = [
   {
     id: 1,
-    name: "Bravia Ultra 65\" 4K OLED Smart TV",
-    category: "tvs",
-    categoryLabel: "TVs & Displays",
-    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=800&q=80",
-    description: "Stunning 4K OLED display with Cognitive Processor XR, 120Hz refresh rate and immersive Acoustic Surface Audio.",
-    specs: ["65-inch 4K OLED", "120Hz Refresh Rate", "Google TV OS", "Dolby Atmos & Vision"],
-    tag: "Flagship"
+    name: "Japan Pro 1.5 Ton T3 DC Inverter AC",
+    category: "ac",
+    categoryLabel: "Inverter ACs",
+    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80",
+    description: "Full DC Inverter AC with T3 Tropicalized Compressor, 75% Energy Saving and instant 60s Cooling.",
+    specs: ["1.5 Ton DC Inverter", "T3 Tropical Compressor", "75% Electricity Saving", "Heat & Cool Dual Mode"],
+    tag: "Summer Special"
   },
   {
     id: 2,
-    name: "SonicPro Wireless Noise-Canceling Headphones",
-    category: "audio",
-    categoryLabel: "Audio & Speakers",
-    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80",
-    description: "Industry-leading active noise cancellation with 30-hour battery life, quick charge and ultra-soft memory foam earcups.",
-    specs: ["ANC Dual Noise Sensor", "30-Hr Battery", "High-Res Audio", "Hands-Free Mic"],
+    name: "Glass Door Double Door Refrigerator 450L",
+    category: "refrigerator",
+    categoryLabel: "Refrigerators & Freezers",
+    image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+    description: "Tempered Glass Door Refrigerator with Direct Cool tech, Low Voltage Startup (135V) and 10 Years Warranty.",
+    specs: ["450 Liters Capacity", "Low Voltage Start 135V", "Tempered Glass Finish", "10-Yr Compressor Warranty"],
     tag: "Best Seller"
   },
   {
     id: 3,
-    name: "ZenBook Pro 15 M-Series Laptop",
-    category: "laptops",
-    categoryLabel: "Laptops & Computers",
-    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=80",
-    description: "Ultra-slim aluminum chassis featuring 3.2K OLED Touch display, 32GB RAM and next-gen multi-core processor performance.",
-    specs: ["Intel i9 / 32GB RAM", "1TB NVMe SSD", "3.2K OLED Display", "Lightweight 1.4kg"],
-    tag: "Pro Performance"
+    name: "Bravia 65\" 4K Ultra HD Smart LED TV",
+    category: "led",
+    categoryLabel: "LED TVs & Displays",
+    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=800&q=80",
+    description: "Frameless 4K Ultra HD Smart LED TV with Google TV OS, HDR10+, Voice Remote & Built-in WiFi.",
+    specs: ["65-inch 4K Frameless", "Google TV & Netflix", "Dolby Atmos Audio", "Bluetooth & Voice Remote"],
+    tag: "Flagship"
   },
   {
     id: 4,
-    name: "Apex Ultra 5G Smartphone (256GB)",
-    category: "mobile",
-    categoryLabel: "Mobile & Accessories",
-    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80",
-    description: "200MP Quad-Camera system with 100x Space Zoom, 120Hz Dynamic AMOLED display and lightning 65W fast charging.",
-    specs: ["200MP Camera", "5000mAh Battery", "6.8\" AMOLED 120Hz", "IP68 Water Resistant"],
-    tag: "New Arrival"
+    name: "Fully Automatic Front Load Washing Machine 9kg",
+    category: "washing",
+    categoryLabel: "Washing Machines",
+    image: "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=800&q=80",
+    description: "Inverter Direct Drive Washing Machine with Steam Wash, 1400 RPM spin and anti-bacterial drum.",
+    specs: ["9kg Load Capacity", "Inverter Direct Drive", "Steam Wash & Sanitization", "1400 RPM Spin Speed"],
+    tag: "New Model"
   },
   {
     id: 5,
-    name: "AcousticPulse Portable Bluetooth Speaker",
-    category: "audio",
-    categoryLabel: "Audio & Speakers",
-    image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=800&q=80",
-    description: "360-degree deep bass spatial audio speaker, IP67 waterproof design with up to 24 hours playback capability.",
-    specs: ["360° Spatial Sound", "24-Hr Battery", "IP67 Dust & Waterproof", "PartyBoost Link"],
-    tag: "Portable"
+    name: "Heavy Duty Honeycomb Room Air Cooler",
+    category: "cooler",
+    categoryLabel: "Air Coolers",
+    image: "https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=800&q=80",
+    description: "High airflow room cooler featuring thick honeycomb pads, ice chamber compartment, and inverter compatibility.",
+    specs: ["60 Liters Tank", "3-Side Honeycomb Pads", "Ice Chamber Cooling", "Low Power Draw"],
+    tag: "High Airflow"
   },
   {
     id: 6,
-    name: "ChronoFit Ultra Smartwatch Series 9",
-    category: "smart",
-    categoryLabel: "Smart Devices",
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80",
-    description: "Precision health sensor tracking ECG, SpO2, sleep cycle & sports modes with sapphire crystal always-on display.",
-    specs: ["Sapphire Glass", "ECG & Heart Monitor", "GPS Track", "7-Day Battery Life"],
-    tag: "Smart Fitness"
+    name: "Double Door Chest Deep Freezer 350L",
+    category: "refrigerator",
+    categoryLabel: "Refrigerators & Freezers",
+    image: "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=800&q=80",
+    description: "Heavy cooling chest deep freezer with copper evaporator coils, thick insulation, and dual compartment lock.",
+    specs: ["350 Liters Capacity", "100% Copper Winding", "Fast Freezing Mode", "Deep Temperature Retention"],
+    tag: "Commercial Grade"
   }
 ];
 
 export const TRUST_STATS = [
   {
     icon: "ShieldCheck",
-    title: "Quality Products",
-    description: "Carefully selected electronics from top trusted manufacturers."
+    title: "Genuine Warranty",
+    description: "Official brand warranties on all ACs, Fridges & LED TVs."
   },
   {
     icon: "Headphones",
-    title: "Trusted Service",
-    description: "Dedicated customer support before & after your purchase."
+    title: "Trusted Support",
+    description: "Direct assistance and guidance for installation & delivery."
   },
   {
     icon: "Cpu",
-    title: "Modern Technology",
-    description: "Latest genuine electronic solutions and smart gadgets."
+    title: "Inverter Technology",
+    description: "Energy-efficient DC inverter appliances for low electricity bills."
   },
   {
     icon: "Zap",
     title: "Easy Ordering",
-    description: "Quick & simple WhatsApp / Direct call communication."
+    description: "Quick call or WhatsApp booking with doorstep delivery."
   }
 ];
 
@@ -156,21 +155,21 @@ export const WHY_CHOOSE_US = [
   {
     icon: "CheckCircle2",
     title: "Quality First",
-    description: "Every product in our inventory is thoroughly inspected for performance, durability, and authenticity."
+    description: "Every AC, refrigerator, LED TV, and washing machine is 100% authentic and tested for Pakistani power conditions."
   },
   {
     icon: "Sparkles",
-    title: "Modern Technology",
-    description: "We bring the newest technological innovations directly to you, from 4K displays to smart wearables."
+    title: "DC Inverter Technology",
+    description: "Save up to 75% on electricity bills with energy-efficient T3 tropical inverter air conditioners & fridges."
   },
   {
     icon: "PhoneCall",
-    title: "Reliable Support",
-    description: "Enjoy direct personal assistance. Our team is readily available via phone or WhatsApp to guide your purchase."
+    title: "Reliable Local Service",
+    description: "Direct personal support from Japan Electronics team via phone (0333 2798969) and WhatsApp."
   },
   {
     icon: "UserCheck",
-    title: "Customer Focused",
-    description: "Transparent pricing, authentic products, and hassle-free buying experience tailored to customer satisfaction."
+    title: "Customer Centric",
+    description: "Honest pricing, low-voltage startup appliances, and complete after-sales peace of mind."
   }
 ];
